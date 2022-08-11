@@ -1,0 +1,50 @@
+@import '../../../scss/variables.scss';
+
+.footer {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .footerText {
+    padding-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      @include desktop {
+        font-size: 30px;
+      }
+      @include tablet {
+        font-size: 23px;
+      }
+      font-size: 18px;
+    }
+    h3 {
+      @include desktop {
+        font-size: 23px;
+      }
+      @include tablet {
+        font-size: 17px;
+      }
+      font-weight: 500;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    .blue {
+      color: $woloxBlue;
+    }
+  }
+
+  .aboutButton {
+    margin-top: 2em;
+  }
+  .logo {
+    padding-top: 2em;
+    img {
+      @include desktop {
+        width: 80px;
+      }
+      width: 60px;
+    }
+  }
+}
